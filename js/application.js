@@ -37,7 +37,6 @@ jQuery(document).ready(function() {
       };
 
 
-
       var calculateTotal = function() {
         var numItems = $('.item-price').length;
         var totalPrice = 0;
@@ -63,6 +62,14 @@ jQuery(document).ready(function() {
         return totalPrice;
       };
 
+      var inputError = function (error) {
+        var inputClass = "has-success";
+        if (error) {
+          var inputClass = "has-error"
+        }
+        return inputClass;
+      }
+
 
         /* event functions */
 
@@ -77,8 +84,12 @@ jQuery(document).ready(function() {
           var itemQuantity = $(this).val();
 
           if (checkInput(itemQuantity)) {
+            $(this).parent().parent().removeClass("has-error");
+            $(this).parent().parent().addClass("has-success");
             console.log("Input ok");
           } else {
+            $(this).parent().parent().addClass("has-error");
+            $(this).parent().parent().removeClass("has-success");
             $(this).focus();
             console.log("Some problem here");
           }
