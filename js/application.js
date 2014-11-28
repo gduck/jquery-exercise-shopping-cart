@@ -84,10 +84,14 @@ jQuery(document).ready(function() {
             $(this).focus();
             console.log("Some problem here");
           }
-
         });
 
-
+        $('.remove-button').on('click', function() {
+          console.log("here");
+          if (confirm("Are you sure you want to delete this item?")) {
+            $(this).parent().parent().remove();
+          }
+        });
 
         // nice to have
         // highlight box when cursor inside
