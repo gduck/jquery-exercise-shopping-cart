@@ -1,2 +1,9 @@
 
 
+#items-list {
+  font: 25px arial, sans-serif;
+}
+
+.item-name {
+  text-align: center;
+}

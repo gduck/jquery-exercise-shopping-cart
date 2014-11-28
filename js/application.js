@@ -62,15 +62,6 @@ jQuery(document).ready(function() {
         return totalPrice;
       };
 
-      var inputError = function (error) {
-        var inputClass = "has-success";
-        if (error) {
-          var inputClass = "has-error"
-        }
-        return inputClass;
-      }
-
-
         /* event functions */
 
         $('#calc-prices-button').on('click', function() {
