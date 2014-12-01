@@ -16,5 +16,14 @@
   padding-top: 15px;
 }
 
-.image-item {
+.remove-button {
+  font-size: 10px;
+}
+
+#create-item-button {
+  font-size: 15px;
+}
+
+.new-item-name-input, .new-item-price-input {
+  font-size: 25px;
 }

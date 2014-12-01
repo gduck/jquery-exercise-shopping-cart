@@ -87,14 +87,53 @@ jQuery(document).ready(function() {
         });
 
         $('.remove-button').on('click', function() {
-          console.log("here");
           if (confirm("Are you sure you want to delete this item?")) {
             $(this).parent().parent().remove();
           }
         });
 
-        // nice to have
-        // highlight box when cursor inside
+        $('#create-item-button').on('click', function() {
+          // make an array of items so far
+          var itemList = $('.item-price');
+          var numItems = itemList.length;
+          console.log("itemList is "+itemList);
+          console.log("numItems is "+numItems);
+
+          // add code for another row
+
+          var newItem = "example";
+          var newPrice = "$2.00";
+
+          var newItemCode = $('<div class="item-name" col-xs-5>New item</div>'); // + newItem + $('</div>');
+          $('.items-list').append(newItemCode);
+          var newPriceCode = $('<div class="item-price" col-xs-5>New price</div>'); // + newPrice + $('</div>');
+          $('.items-List').append(newPriceCode);
+
+// a row in the data container
+/*
+      <div class="row form-group has-success">
+        <!-- <img class="item-image col-xs-1" src="images/thumbs/thumb1.png"> -->
+        <div class="item-name col-xs-5">
+          Salmon
+        </div>
+        <div class="item-price col-xs-2">
+          $60.00
+        </div>
+        <span class="item-qty col-xs-3">
+          <input class="quantity form-control input-lg" type="text" value=0>
+        </span>
+        <button class="remove-button" type="button">Remove</button>
+      </div> <!-- end row -->
+
+
+$('#button').on('click', function() {
+    var orange = $('<li>Orange</li>');
+    $('.food').append(orange);
+});
+*/
+
+        });
+
 
 
       }); // end document ready

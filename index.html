@@ -27,127 +27,143 @@
       </div>
 
       <div class="row quantity-label">
-        <div class="col-xs-offset-9">
+        <div class="col-xs-offset-7">
           <label class="">QTY</label>
         </div>
       </div> <!-- end row -->
 
-      <div class="data-container col-xs-11">
+      <div class="data-container col-xs-12">
 
       <div class="row form-group has-success">
-        <!-- <div> -->
-        <img class="item-image col-xs-1" src="images/thumbs/thumb1.png">
-        <!-- </div> -->
+        <!-- <img class="item-image col-xs-1" src="images/thumbs/thumb1.png"> -->
         <div class="item-name col-xs-5">
           Salmon
         </div>
-        <div class="item-price col-xs-3">
+        <div class="item-price col-xs-2">
           $60.00
         </div>
-        <div class="item-qty col-xs-3">
+        <span class="item-qty col-xs-3">
           <input class="quantity form-control input-lg" type="text" value=0>
-          <button class="remove-button" type="button">Remove</button>
-        </div>
+        </span>
+        <button class="remove-button" type="button">Remove</button>
       </div> <!-- end row -->
 
       <div class="row form-group has-success">
-        <div class="item-name col-xs-6">
+        <div class="item-name col-xs-5">
           Tuna
         </div>
-        <div class="item-price col-xs-3">
+        <div class="item-price col-xs-2">
           $50.00
         </div>
         <div class="item-qty col-xs-3">
-          <!-- <label>QTY</label> -->
           <input class="quantity form-control input-lg" type="text" value=0>
         </div>
+        <button class="remove-button" type="button">Remove</button>
       </div>  <!-- end row -->
       <div class="row form-group has-success">
-        <div class="item-name col-xs-6">
+        <div class="item-name col-xs-5">
           Carp
         </div>
-        <div class="item-price col-xs-3">
+        <div class="item-price col-xs-2">
           $40.00
         </div>
         <div class="item-qty col-xs-3">
-          <!-- <label>QTY</label> -->
           <input class="quantity form-control input-lg" type="text" value=0>
         </div>
+        <button class="remove-button" type="button">Remove</button>
       </div> <!-- end row -->
       <div class="row form-group has-success">
-        <div class="item-name col-xs-6">
+        <div class="item-name col-xs-5">
           Pork
         </div>
-        <div class="item-price col-xs-3">
+        <div class="item-price col-xs-2">
           $50.00
         </div>
         <div class="item-qty col-xs-3">
-          <!-- <label>QTY</label> -->
           <input class="quantity form-control input-lg" type="text" value=0>
         </div>
+        <button class="remove-button" type="button">Remove</button>
       </div> <!-- end row -->
       <div class="row form-group has-success">
-        <div class="item-name col-xs-6">
+        <div class="item-name col-xs-5">
           Beef
         </div>
-        <div class="item-price col-xs-3">
+        <div class="item-price col-xs-2">
           $40.00
         </div>
         <div class="item-qty col-xs-3">
-          <!-- <label>QTY</label> -->
           <input class="quantity form-control input-lg" type="text" value=0>
         </div>
+        <button class="remove-button" type="button">Remove</button>
       </div> <!-- end row -->
       <div class="row form-group has-success">
-        <div class="item-name col-xs-6">
+        <div class="item-name col-xs-5">
           Chicken
         </div>
-        <div class="item-price col-xs-3">
+        <div class="item-price col-xs-2">
           $25.00
         </div>
         <div class="item-qty col-xs-3">
-          <!-- <label>QTY</label> -->
           <input class="quantity form-control input-lg" type="text" value=0>
         </div>
+        <button class="remove-button" type="button">Remove</button>
       </div> <!-- end row -->
       <div class="row form-group has-success">
-        <div class="item-name col-xs-6">
+        <div class="item-name col-xs-5">
           Cereal
         </div>
-        <div class="item-price col-xs-3">
+        <div class="item-price col-xs-2">
           $45.00
         </div>
         <div class="item-qty col-xs-3">
-          <!-- <label>QTY</label> -->
           <input class="quantity form-control input-lg" type="text" value=0>
         </div>
+        <button class="remove-button" type="button">Remove</button>
       </div> <!-- end row -->
       <div class="row form-group has-success">
-        <div class="item-name col-xs-6">
+        <div class="item-name col-xs-5">
           Milk
         </div>
-        <div class="item-price col-xs-3">
+        <div class="item-price col-xs-2">
           $20.00
         </div>
         <div class="item-qty col-xs-3">
-          <!-- <label>QTY</label> -->
           <input class="quantity form-control input-lg" type="text" value=0>
         </div>
+        <button class="remove-button" type="button">Remove</button>
       </div> <!-- end row -->
+
       <div class="row form-group has-success">
-        <div class="item-name col-xs-6">
+        <div class="item-name col-xs-5">
           Sugar
         </div>
-        <div class="item-price col-xs-3">
+        <div class="item-price col-xs-2">
           $10.00
         </div>
         <div class="item-qty col-xs-3">
-          <!-- <label>QTY</label> -->
           <input class="quantity form-control input-lg" type="text" value=0>
         </div>
+        <button class="remove-button" type="button">Remove</button>
       </div> <!-- end row -->
-      <div class="row form-group has-success">
-        <div class="col-xs-3 col-xs-offset-9">
+
+      <div class="row form-group">
+        <!-- <div class="new-item"> -->
+          <div class="new-item-name col-xs-5">
+            <input class="new-item-name-input" type="text" placeholder="Item">
+          </div>
+          <div class="new-item-price col-xs-2">
+            <input class="new-item-price-input" type="number" placeholder="Price">
+          </div>
+          <div class="create-new-item col-xs-1">
+            <button id="create-item-button" type="button" class="btn">
+           Create Item</button>
+          </div>
+          <div class="col-xs-4"></div>
+        <!-- </div>  end new item group -->
+      </div>
+
+      <div class="row form-group">
+        <div class="col-xs-3 col-xs-offset-7">
           <button id="calc-prices-button" type="button" data-button='{"id": "3424"}' class="btn btn-success">
             Calculate Prices
           </button>
