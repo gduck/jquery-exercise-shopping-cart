@@ -104,10 +104,14 @@ jQuery(document).ready(function() {
           var newItem = "example";
           var newPrice = "$2.00";
 
-          var newItemCode = $('<div class="item-name" col-xs-5>New item</div>'); // + newItem + $('</div>');
-          $('.items-list').append(newItemCode);
-          var newPriceCode = $('<div class="item-price" col-xs-5>New price</div>'); // + newPrice + $('</div>');
-          $('.items-List').append(newPriceCode);
+// need to add to data container, another item group
+
+          var newItemCode1 = $('<div class="row form-group has-success">');
+          var newItemCode2 = $('<div class="item-name col-xs-5">New item</div><div class="item-price col-xs-2">New Price</div>');
+          var newItemCode3 = $('<span class="item-qty col-xs-3"><input class="quantity form-control input-lg" type="text" value=0></span>');
+          var newItemCode4 = $('<button class="remove-button" type="button">Remove</button></div>');
+
+          $('.data-container').append(newItemCode1).append(newItemCode2).append(newItemCode3).append(newItemCode4);
 
 // a row in the data container
 /*
